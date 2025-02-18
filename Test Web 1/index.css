@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+html {
+    scroll-padding-top: 70px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D32F2F;
+    position: fixed;
+    width: 100%;
+    top: -70px; 
+    transition: top 0.35s ease-in-out;
+    z-index: 1000;
+    height: 70px; 
+}
+
+.header-trigger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 999;
+}
+
+.header-trigger:hover ~ header {
+    top: 0;
+}
+
+header:hover {
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    margin: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-right: 40px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 15px; 
+}
+
+.nav-link:hover {
+    color: rgb(56, 55, 55);
+}
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #D32F2F;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 1000;
+    width: auto; 
+    white-space: nowrap; 
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: normal;
+    transition: background-color 0.3s;
+    padding: 10px 15px; 
+}
+
+.dropdown-menu a:hover {
+    background-color: #C2185B;
+}
+
+.sect1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sect2 {
+    height: 700px;
+    background-color: #111114;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.gilp {
+    font-size: 64px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.gems {
+    display: flex;
+    gap: 100px;
+}
+
+.gems img {
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gems img:hover {
+    transform: scale(1.1);
+}
+
+.sect3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+    height: 500px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.left img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left img:hover {
+    transform: scale(1.8);
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+
+.right p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #111114;
+    height: 40vh;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    gap: 20px;
+}
+
+footer a img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
